@@ -156,6 +156,8 @@ MainActivity.Java中的关键代码
         }
     }
 
+![GIF.gif](http://upload-images.jianshu.io/upload_images/3901809-be8a6508f2207edd.gif?imageMogr2/auto-orient/strip)
+
 
 demo地址
 [https://github.com/miaoMiaoDaShi/ScrollerDemo](https://github.com/miaoMiaoDaShi/ScrollerDemo "demo地址")
