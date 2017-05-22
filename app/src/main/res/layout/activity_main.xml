@@ -5,11 +5,16 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.xxp.zcoder.scrollerdemo.MainActivity">
-    <com.xxp.zcoder.scrollerdemo.IconRunImageView
-        android:id="@+id/ivIcon"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@mipmap/ic_launcher"/>
+    <com.xxp.zcoder.scrollerdemo.Mylayout
+        android:id="@+id/myLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_launcher"/>
+    </com.xxp.zcoder.scrollerdemo.Mylayout>
     <EditText
         android:text="1000"
         android:id="@+id/txtDuration"

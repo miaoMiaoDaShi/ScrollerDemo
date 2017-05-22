@@ -5,14 +5,12 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.ImageView;
-import android.widget.Scroller;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
     private EditText txtDuration;
     private Button btnRun;
-    private IconRunImageView ivIcon;
+    private Mylayout myLayout;
     private int mDuration;
 
     @Override
@@ -21,17 +19,21 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         setContentView(R.layout.activity_main);
         initView();
         btnRun.setOnClickListener(this);
-        mDuration = Integer.parseInt(txtDuration.getText().toString());
     }
 
     private void initView() {
         txtDuration = (EditText) findViewById(R.id.txtDuration);
-        ivIcon = (IconRunImageView) findViewById(R.id.ivIcon);
+        myLayout = (Mylayout) findViewById(R.id.myLayout);
         btnRun = (Button) findViewById(R.id.btnRun);
     }
 
     @Override
     public void onClick(View v) {
-        ivIcon.scroll(100, 100, 500, 500, mDuration);
+        switch (v.getId()) {
+            case R.id.myLayout:
+                mDuration = Integer.parseInt(txtDuration.getText().toString());
+                myLayout.scroll(0, 0, -500, -500, mDuration);
+                break;
+        }
     }
 }

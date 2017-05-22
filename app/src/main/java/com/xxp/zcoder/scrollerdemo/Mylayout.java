@@ -1,10 +1,10 @@
 package com.xxp.zcoder.scrollerdemo;
 
-import android.annotation.SuppressLint;
 import android.content.Context;
 import android.support.annotation.Nullable;
 import android.util.AttributeSet;
-import android.widget.ImageView;
+import android.view.ViewGroup;
+import android.widget.LinearLayout;
 import android.widget.Scroller;
 
 /**
@@ -14,19 +14,19 @@ import android.widget.Scroller;
  * Description :
  */
 
-public class IconRunImageView extends android.support.v7.widget.AppCompatImageView {
+public class Mylayout extends LinearLayout {
 
     private Scroller mScroller;
 
-    public IconRunImageView(Context context) {
+    public Mylayout(Context context) {
         this(context, null);
     }
 
-    public IconRunImageView(Context context, @Nullable AttributeSet attrs) {
+    public Mylayout(Context context, @Nullable AttributeSet attrs) {
         this(context, attrs, 0);
     }
 
-    public IconRunImageView(Context context, @Nullable AttributeSet attrs, int defStyleAttr) {
+    public Mylayout(Context context, @Nullable AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
         mScroller = new Scroller(context);
 
